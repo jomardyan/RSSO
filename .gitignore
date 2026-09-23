@@ -1,0 +1,28 @@
+# Private originals, scratch work, and generated releases
+.local/
+.build/
+dist/
+reports/
+backups/
+_RSSO_working.xlsm
+*.zip
+*.docx
+~$*
+
+# Python and editor state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key

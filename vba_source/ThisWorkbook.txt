@@ -1,0 +1,10 @@
+Option Explicit
+
+Private Sub Workbook_Open()
+    On Error GoTo RegistrationFailed
+    RegisterRSSO
+    LoadRSSOTypingHelp
+    Exit Sub
+RegistrationFailed:
+    MsgBox "RSSO help could not be registered: " & Err.Description, vbExclamation, "RSSO"
+End Sub
