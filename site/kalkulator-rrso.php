@@ -6,10 +6,10 @@
     <title>Kalkulator RRSO 2026 – RRSO, MPKK i odsetki maksymalne</title>
     <meta name="description" content="Darmowy kalkulator RRSO: oblicz rzeczywistą roczną stopę oprocentowania kredytu lub pożyczki i sprawdź limity MPKK oraz odsetek maksymalnych na 2026 r.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-    <link rel="canonical" href="https://kredyt.lolisoft.eu/">
-    <link rel="alternate" hreflang="pl" href="https://kredyt.lolisoft.eu/">
-    <link rel="alternate" hreflang="x-default" href="https://kredyt.lolisoft.eu/">
-    <meta name="theme-color" content="#3730a3">
+    <link rel="canonical" href="https://kredyt.lolisoft.eu/kalkulator-rrso.php">
+    <link rel="alternate" hreflang="pl" href="https://kredyt.lolisoft.eu/kalkulator-rrso.php">
+    <link rel="alternate" hreflang="x-default" href="https://kredyt.lolisoft.eu/kalkulator-rrso.php">
+    <meta name="theme-color" content="#142b45">
     <meta name="author" content="LoliSoft">
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pl_PL">
     <meta property="og:site_name" content="kredyt.lolisoft.eu">
-    <meta property="og:url" content="https://kredyt.lolisoft.eu/">
+    <meta property="og:url" content="https://kredyt.lolisoft.eu/kalkulator-rrso.php">
     <meta property="og:title" content="Kalkulator RRSO 2026 – RRSO, MPKK i odsetki maksymalne">
     <meta property="og:description" content="Oblicz RRSO kredytu lub pożyczki i sprawdź, czy koszty mieszczą się w limitach prawnych obowiązujących w 2026 r.">
     <meta property="og:image" content="https://kredyt.lolisoft.eu/og-image.png">
@@ -47,27 +47,27 @@
                 "@type": "WebSite",
                 "@id": "https://kredyt.lolisoft.eu/#website",
                 "url": "https://kredyt.lolisoft.eu/",
-                "name": "Kalkulator RRSO – kredyt.lolisoft.eu",
+                "name": "Finanse w Polsce – kredyt.lolisoft.eu",
                 "inLanguage": "pl-PL",
                 "publisher": { "@id": "https://kredyt.lolisoft.eu/#organization" }
             },
             {
                 "@type": "WebPage",
-                "@id": "https://kredyt.lolisoft.eu/#webpage",
-                "url": "https://kredyt.lolisoft.eu/",
+                "@id": "https://kredyt.lolisoft.eu/kalkulator-rrso.php#webpage",
+                "url": "https://kredyt.lolisoft.eu/kalkulator-rrso.php",
                 "name": "Kalkulator RRSO 2026 – RRSO, MPKK i odsetki maksymalne",
                 "description": "Darmowy kalkulator RRSO: oblicz rzeczywistą roczną stopę oprocentowania kredytu lub pożyczki i sprawdź limity MPKK oraz odsetek maksymalnych na 2026 r.",
                 "inLanguage": "pl-PL",
                 "dateModified": "2026-09-23",
                 "isPartOf": { "@id": "https://kredyt.lolisoft.eu/#website" },
-                "about": { "@id": "https://kredyt.lolisoft.eu/#app" },
+                "about": { "@id": "https://kredyt.lolisoft.eu/kalkulator-rrso.php#app" },
                 "primaryImageOfPage": "https://kredyt.lolisoft.eu/og-image.png"
             },
             {
                 "@type": "WebApplication",
-                "@id": "https://kredyt.lolisoft.eu/#app",
+                "@id": "https://kredyt.lolisoft.eu/kalkulator-rrso.php#app",
                 "name": "Kalkulator RRSO",
-                "url": "https://kredyt.lolisoft.eu/",
+                "url": "https://kredyt.lolisoft.eu/kalkulator-rrso.php",
                 "applicationCategory": "FinanceApplication",
                 "operatingSystem": "Any",
                 "browserRequirements": "Requires JavaScript",
@@ -88,11 +88,11 @@
 
     <style>
         :root {
-            --brand: #3730a3;
-            --brand-600: #4f46e5;
-            --brand-700: #4338ca;
-            --brand-50: #eef2ff;
-            --brand-100: #e0e7ff;
+            --brand: #142b45;
+            --brand-600: #147f78;
+            --brand-700: #0c625d;
+            --brand-50: #f1f7f5;
+            --brand-100: #dff4ed;
             --ink: #111827;
             --ink-2: #374151;
             --muted: #6b7280;
@@ -337,7 +337,8 @@
             .hero-grid, .excel { grid-template-columns: 1fr; }
             .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .grid-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-            .nav-links { display: none; }
+            .nav { height: auto; min-height: 64px; flex-wrap: wrap; padding-block: 8px; }
+            .nav-links { display: flex; flex-wrap: wrap; }
         }
         @media (max-width: 640px) {
             .hero { padding: 40px 0; }
@@ -352,6 +353,7 @@
             .tab-btn { flex: 1; padding: 10px 8px; }
             .result-meta { text-align: left; }
             .symbols { grid-template-columns: 1fr; }
+            .nav-links a { padding: 6px 8px; font-size: 13px; }
         }
         @media (prefers-reduced-motion: reduce) {
             html { scroll-behavior: auto; }
@@ -366,13 +368,16 @@
         <nav class="container nav" aria-label="Główna nawigacja">
             <a class="brand" href="/" aria-label="kredyt.lolisoft.eu – strona główna">
                 <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
-                    <rect width="32" height="32" rx="8" fill="#3730a3"/>
+                    <rect width="32" height="32" rx="8" fill="#142b45"/>
                     <path d="M9 22 L14 15 L18 18 L23 10" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="23" cy="10" r="2.2" fill="#a5b4fc"/>
+                    <circle cx="23" cy="10" r="2.2" fill="#83d6c1"/>
                 </svg>
                 <span>kredyt.lolisoft.eu</span>
             </a>
             <ul class="nav-links">
+                <li><a href="/">Start</a></li>
+                <li><a href="/tematy.php">Tematy</a></li>
+                <li><a href="/narzedzia.php">Narzędzia</a></li>
                 <li><a href="#kalkulator">Kalkulator</a></li>
                 <li><a href="#limity">Limity 2026</a></li>
                 <li><a href="#jak-liczymy">Wzór RRSO</a></li>
@@ -812,7 +817,7 @@
                     </p>
                     <p class="small">
                         Podstawa prawna: art. 359 § 2<sup>1</sup> i art. 481 § 2<sup>1</sup> Kodeksu cywilnego;
-                        art. 36a ustawy z dnia 12 maja 2011 r. o kredycie konsumenckim; stopa referencyjna publikowana przez
+                        <a href="https://eli.gov.pl/api/acts/DU/2024/1497/text.html" rel="noopener">art. 36a ustawy o kredycie konsumenckim</a>; stopa referencyjna publikowana przez
                         <a href="https://nbp.pl/" rel="noopener">Narodowy Bank Polski</a>.
                     </p>
                 </div>
@@ -989,10 +994,11 @@
             <div>
                 <p><strong>kredyt.lolisoft.eu</strong> – kalkulator RRSO i limitów kosztów kredytu</p>
                 <p>Dane prawne wg stanu na <span data-legal="asOf">23 września 2026 r.</span> Nie stanowi porady prawnej.</p>
+                <p><a href="/">Strona główna</a> · <a href="/tematy.php">Przewodniki</a> · <a href="/zrodla.php">Źródła</a></p>
             </div>
             <div>
                 <p>© 2026 LoliSoft</p>
-                <p><a href="https://github.com/jomardyan/RSSO" rel="noopener">Kod źródłowy (licencja MIT)</a></p>
+                <p><a href="https://github.com/jomardyan/RSSO" rel="noopener">Kod źródłowy</a></p>
             </div>
         </div>
     </footer>

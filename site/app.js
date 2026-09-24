@@ -1,6 +1,6 @@
 // ==========================================
 // RSSO Calculation Functions
-// Mirrors vba_source/RSSO.bas; errors carry the Excel error code.
+// Browser implementation of the RSSO calculation; errors carry the Excel error code.
 // ==========================================
 
 const VALUE_ERROR = '#VALUE!';
