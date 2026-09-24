@@ -32,6 +32,12 @@ RSSO supports fixed 365/366-day years and calendar-year ACT/ACT. The original `L
 
 Net receipts must precede net repayments after combining entries on the same date. Schedules that alternate back to borrowing return `#NUM!` because a unique rate is not guaranteed. See [the input rules](docs/USAGE.md#input-rules).
 
+## Website
+
+`site/` is a static, dependency-free Polish landing page with the same calculation, published at [kredyt.lolisoft.eu](https://kredyt.lolisoft.eu/). Deploy the folder's contents to the web root as they are; no build step is needed.
+
+The legal limits (NBP reference rate, maximum interest, MPKK) are defined in `site/legal-config.js`. When the rate or the law changes, update that file, then update `lastmod` in `site/sitemap.xml` and `dateModified` in the JSON-LD in `site/index.html`.
+
 ## Project layout
 
 ```text
@@ -41,6 +47,7 @@ help/               Pinned typing-help add-ins and third-party licenses
 scripts/            Excel rebuild, validation, and release packaging
 tests/             Tests for release tooling
 docs/              Usage, development, release instructions, and verification
+site/               Static landing page and browser calculator (kredyt.lolisoft.eu)
 .github/            CI workflow and contribution templates
 ```
 
